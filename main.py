@@ -1,16 +1,22 @@
-# This is a sample Python script.
+import random
+class people_going_for_charity_work():
+    def List(self):
+        self.concent=input("Do you want to volunteer?Yes/No")
+        concent=self.concent.lower()
+        self.volunteers=input("Enter your name:").title()
+        names=["John","Mary","Grace","Davie","Irene","Jack","Belta","John"]
+        #the principal needs only four names
+        vol=[]
+        for i in range(len(names)):
+            principal_pick = random.choice(names)
+            vol.append(principal_pick)
+        vol=set(vol)
+        print(vol)
+        if self.volunteers in vol:
+            print("You were selected to join the group")
+        else:
+            print("Ooops! You were not selected to join the group")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+c1=people_going_for_charity_work()
+c1.List()
