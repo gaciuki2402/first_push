@@ -7,6 +7,7 @@ if concent=="yes" or concent=="y":
     while True:
         possible_actions = ["rock", "paper", "scissors"]
         computer_guess = random.choice(possible_actions)
+        print(computer_guess)
 
         attempt=input("Come on Grace, Enter your try,(choose between rock,paper,scissors):")
         attempt.lower()
